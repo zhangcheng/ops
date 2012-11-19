@@ -8,6 +8,7 @@ default:
       - aptitude
       - etckeeper
       - git-core
+      - build-essential
       - htop
       - linux-headers-virtual
       - linux-image-virtual
