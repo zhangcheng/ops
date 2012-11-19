@@ -6,14 +6,15 @@ default:
     - latest
     - names:
       - aptitude
+      - build-essential
       - etckeeper
       - git-core
-      - build-essential
       - htop
       - linux-headers-virtual
       - linux-image-virtual
       - linux-virtual
       - logrotate
+      - openjdk-6-jdk
       - realpath
       - sudo
       - tmux
