@@ -1,11 +1,12 @@
-# require "../lib/vagrant-salt"
 
 Vagrant::Config.run do |config|
   config.vm.box = "precise64"
   ## Use all the defaults:
   config.vm.provision :salt do |salt|
-    salt.run_highstate = false
-    master = true
+    salt.run_highstate = true
+    master = false
+    salt.salt_file_root_path = "salt/roots/salt"
+    salt.salt_pillar_root_path = "salt/roots/pillar"
 
     ## Optional Settings:
     # salt.minion_config = "salt/minion.conf"
